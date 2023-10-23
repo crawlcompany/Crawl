@@ -11,6 +11,22 @@
 
   gtag('config', 'G-45LSL2TES0');
 </script>
+          <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'PrintScreen' || (e.key === 'p' && e.ctrlKey)) {
+                    alert('Screenshots are disabled on this page.');
+                    e.preventDefault();
+                }
+            });
+
+            window.addEventListener('contextmenu',
+                function(e) {
+                    alert('crawl security company says right click is disabled!  ');
+                    e.preventDefault();
+                });
+        });
+          </script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
